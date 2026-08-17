@@ -22,4 +22,4 @@ jobs:
           cache: 'maven'
 
       - name: Build and Test application 
-        run: cd ./ProductService ./mvnw --batch-mode verify
+        run: cd ProductService ./mvnw --batch-mode verify
