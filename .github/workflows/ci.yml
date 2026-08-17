@@ -25,5 +25,5 @@ jobs:
         run: chmod +x ProductService/mvnw
 
       - name: Build and Test application 
-        run: cd ProductService
+        working-directory: ProductService
         run: ./mvnw --batch-mode verify
