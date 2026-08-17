@@ -2,6 +2,8 @@ package com.shoppingxpress.ProductService.service;
 
 import org.springframework.stereotype.Service;
 
+import com.shoppingxpress.ProductService.repository.*;
+
 @Service
 @RequiredArgsConstructor
 public class ProductService {
