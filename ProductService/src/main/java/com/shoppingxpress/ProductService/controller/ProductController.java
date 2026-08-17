@@ -13,6 +13,8 @@ import lombok.RequiredArgsConstructor;
 import com.shoppingxpress.ProductService.dto.*;
 import com.shoppingxpress.ProductService.service.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping("/api/product")
 @RequiredArgsConstructor
