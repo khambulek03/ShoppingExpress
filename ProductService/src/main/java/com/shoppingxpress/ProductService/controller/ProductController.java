@@ -10,7 +10,8 @@ import org.springframework.http.HttpStatus;
 
 import lombok.RequiredArgsConstructor;
 
-
+import com.shoppingxpress.ProductService.dto.*;
+import com.shoppingxpress.ProductService.service.*;
 
 @RestController
 @RequestMapping("/api/product")
@@ -22,6 +23,8 @@ public class ProductController {
     @GetMapping("/{id}")
     public ResponseEntity<?> getProduct(@PathVariable UUID id) {
         ProductResponseDTO product = productService.getProduct(id);
+        if (product == null)
+            return ResponseEntity.notFound().build();
         return ResponseEntity.ok(product);
     }
 }
