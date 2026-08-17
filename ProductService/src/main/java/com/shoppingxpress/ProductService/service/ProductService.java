@@ -1,3 +1,5 @@
+package com.shoppingxpress.ProductService.service;
+
 import org.springframework.stereotype.Service;
 
 @Service
