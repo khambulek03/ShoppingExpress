@@ -16,4 +16,8 @@ public class ProductService {
     public ProductResponseDTO getProduct(UUID id) {
         return new ProductResponseDTO();
     }
+
+    public Page<ProductResponseDTO> getProducts(int page, int size, String sort) {
+        return null;
+    }
 }
