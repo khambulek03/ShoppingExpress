@@ -8,7 +8,10 @@ on:
 
 jobs:
   Build-test-job:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ProductService
 
     steps:
       - name: Checkout code
@@ -22,4 +25,4 @@ jobs:
           cache: 'maven'
 
       - name: Build and Test application 
-        run: mvn --batch-mode verify
+        run: ./mvnw --batch-mode verify
